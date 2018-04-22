@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/account_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/password_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:layout_below="@+id/account_register"
+        android:layout_toRightOf="@+id/textView2"
+        android:layout_toEndOf="@+id/textView2" />
+
+    <Button
+        android:id="@+id/Yes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="确定"
+        android:layout_marginTop="21dp"
+        android:layout_below="@+id/password_register"
+        android:layout_alignLeft="@+id/password_register"
+        android:layout_alignStart="@+id/password_register" />
+
+    <Button
+        android:id="@+id/No"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/password_register"
+        android:layout_alignRight="@+id/password_register"
+        android:layout_alignTop="@+id/Yes"
+        android:text="取消" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Account"
+        android:layout_alignBaseline="@+id/account_register"
+        android:layout_alignBottom="@+id/account_register"
+        android:layout_toLeftOf="@+id/account_register"
+        android:layout_toStartOf="@+id/account_register" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:layout_alignBaseline="@+id/password_register"
+        android:layout_alignBottom="@+id/password_register"
+        android:layout_toLeftOf="@+id/password_register"
+        android:layout_toStartOf="@+id/password_register" />
+
+    <TextView
+        android:id="@+id/Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="注册"
+        android:layout_marginTop="24dp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/Yes"
+        android:layout_toEndOf="@+id/Yes" />
+</RelativeLayout>
